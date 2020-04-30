@@ -1,0 +1,24 @@
+@import "globals/body.scss";
+@import "globals/colors.scss";
+@import "globals/fonts_texts_headlines.scss";
+@import "globals/hero.scss";
+@import "globals/under_hero_section.scss";
+
+@import "solid_components/top.scss";
+@import "solid_components/navi.scss";
+@import "solid_components/footer.scss";
+
+
+@import "pages/home/carousel.scss";
+@import "pages/home/offer_gallery.scss";
+
+@import "pages/nawierzchnia_z_trawy_syntetycznej/trawa_syntetyczna.scss";
+@import "pages/nawierzchnia_mineralno_zywiczna/miner_zyw.scss";
+@import "pages/nawierzchnia_poliuretanowa/poliuretan.scss";
+@import "pages/nawierzchnia_akrylowa/akryl.scss";
+@import "pages/nawierzchnia_z_trawy_naturalnej/traw_nat.scss";
+@import "pages/plac_zabaw/pl_zabaw.scss";
+@import "pages/kort_tenisowy/kort_ten.scss";
+@import "pages/naprawa_i_retoping/napraw_i_retop.scss";
+@import "pages/konserwacja/konserwacja.scss";
+@import "pages/kontakt/kontakt.scss";

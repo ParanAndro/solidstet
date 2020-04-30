@@ -1,0 +1,72 @@
+.top {
+	padding: 30px 0px;
+		.top-element {
+			.in-top-element-icon {
+				margin-right: 0px;
+				padding-right: 0px;
+			}
+			.in-top-element-text {
+				padding: 0px;
+				text-align: left;
+					.number {
+						font-size: 120%;
+						font-weight: bold;
+						color: $key-color;
+					}
+			}
+	}
+}
+
+
+@media (min-width: 992px) {
+	.top-element {
+		padding: 15px 0px;
+	}
+	.logo {
+		margin-left: 0px;
+		text-align: left;
+	}
+	.insta {
+		text-align: right;
+		i {
+			font-size: 45px;
+		}
+	}
+
+	.nav>li.insta-hidden {
+		display: none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	.top {
+		padding-botom: 20px;
+		.top-element {
+
+		}
+		.logo {
+			padding-bottom: 25px;
+		}
+		.insta {
+			display: none;
+			}
+	}
+}
+
+@media (max-width: 768px) {
+	.top {
+		padding: 15px 0px 0px 0px;
+		.top-element {
+			padding: 7px 0px;
+		}
+		.logo {
+			padding-bottom: 15px;
+		}
+		.insta {
+			display: none;
+		}
+	}
+	.container-fluid {
+		padding: 0px;
+	}
+}

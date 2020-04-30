@@ -1,0 +1,44 @@
+
+.slide {
+	margin: 0 auto;
+}
+
+.static-images {
+	min-height: 620px;
+	width: 100%;
+	.headline-background {
+		margin-top: 0px;
+		padding-top: 230px;
+		.headline-static {
+			padding: 20px;
+			display: inline-block;
+			color: #fff;
+			background-color: rgba(230,56,22,0.9);
+			border-radius: 5px;
+			box-shadow: 2px 2px 2px #933131;
+		}
+	}
+}
+
+
+
+@media (min-width: 992px) {
+	.header-flex {
+		display: flex;
+		justify-content: center;
+		.slide {
+		width: 100vw;
+		}
+	}
+
+}
+
+
+/*property .container-fluid also regulate the navigation bar settings*/
+@media (max-width: 992px) {
+	.container-fluid {
+		padding: 0px;
+	}
+}
+
+

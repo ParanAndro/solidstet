@@ -1,0 +1,136 @@
+
+.absolute-nav {
+	padding: 0px;
+	.nav-stripe {
+		background-color: $gray;
+	}
+}
+
+.dropdown-menu {
+	border-left: 3px solid $key-color;
+	background-color: $gray;
+	opacity: 0.8;
+	border-color: $gray;
+	border-left: 3px solid $key-color;
+		li>a {
+			color: #FFFFFF;
+		}
+		.active>a {
+			background-color: $key-color;
+		}
+}
+
+@media (min-width: 992px) {
+	.absolute-nav {
+		position: absolute;
+		margin-top: -25px;
+		padding: 0px;
+		z-index: 2;
+		.nav-stripe {
+			height: 60px;
+			border-left: solid 15px;
+			border-color: $key-color;
+		}
+	}
+	.ul-nav {
+		width: 95%;
+		display: flex;
+		justify-content: space-between;
+		margin: 7px;
+	}
+}
+
+/*position property contener-parent of navigation is "jumbotron.scss"*/
+@media (min-width: 768px) and (max-width: 992px) {
+	.absolute-nav {
+		width: 100vw;
+		padding-left: 0px;
+	}
+		.nav-stripe {
+
+			.container {
+				padding-left: 0px;
+				margin-left: 0px;
+				width: 100vw;
+				.nav>li>a {
+					text-align: right;
+					img {
+					height: 20px;
+					width: auto;
+					padding-left: 200px;
+					}
+				}
+			}
+		}
+}
+
+
+
+
+@media (max-width: 768px) {
+	.nav-stripe {
+
+		.ul-nav {
+			display: block;
+			.insta-hidden {
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+
+
+
+/*colors menu-fonts and hoovers for full-view stripe menu*/
+@media (min-width: 769px) {
+	.navbar-inverse .navbar-nav>li>a {
+		font-size: 130%;
+		color: #FFFFFF;
+	}
+	
+	.navbar-inverse .navbar-nav>.active>a {
+		background-color: $gray;
+		color: $key-color;
+	}
+
+	.navbar-inverse .navbar-nav>.active>a:hover {
+		background-color: $gray;
+	}
+
+	.navbar-inverse .navbar-nav>.active>a:focus {
+		background-color: $gray;
+		color: $key-color;
+	}
+
+	.navbar-inverse .navbar-nav>li>a:hover {
+		color: $key-color;
+		background-color: $gray;
+	}
+
+	.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+		color: $key-color;
+		border-left: 3px solid $key-color;
+		background-color: $gray;
+	}
+}
+
+
+
+
+/*colors menu-fonts and hoovers for hamburger menu*/
+@media (max-width: 768px) {
+	.navbar-inverse .navbar-nav>.active>a {
+		background-color: $key-color;
+	}
+	.navbar-inverse .navbar-nav>.open>a {
+		background-color: #17161600;
+	}
+	.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+		background-color: $gray;
+		color: $key-color;
+	}
+	.navbar-inverse .navbar-nav .open .dropdown-menu>.active>a {
+		background-color: $key-color;
+	}
+}
